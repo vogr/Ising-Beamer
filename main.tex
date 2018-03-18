@@ -21,7 +21,7 @@
 %\usepackage{lipsum} % Lorem ipsum dans \lipsum
 %\usepackage{pdflscape}
 %\usepackage{verse, attrib} % Format poems
-\usepackage{multicol} %\begin{multicols}{<nbColonnes>}[<Texte avt colonne>]{<txt> \columnbreak <txt>}
+\usepackage{multicol} %\begin{columns}{<nbColonnes>}[<Texte avt colonne>]{<txt> \columnbreak <txt>}
 %\usepackage[backend=biber, doi=false, url=false]{biblatex}
 \usepackage{fvextra, verbatim} % {Verbatim}
 %\usepackage{minted} % in {minted}[opt]{lang}
@@ -45,7 +45,7 @@
 %\addbibresource{base.bib}
 \title[Comportement d'un mélange phénol-eau]{Comportement d'un mélange phénol-eau :\\une approche statistique}
 \author{Valentin \texorpdfstring{\bsc{Ogier}}{Ogier}}
-\date{2017}
+\date{2018}
 
 \newcommand{\p}[1]{\mintinline{python3}{#1}}
 
@@ -257,35 +257,69 @@ Par récurrence
 \end{frame}
 
 \begin{frame}
-    Or, par récurrence simple
-    \[T^N =
+    
+    \begin{align*}
+    T &=
     \begin{pmatrix}
     e^{K}& e^{-K} \\
     e^{-K} & e^{K}
-    \end{pmatrix}^N
-    =
-        \begin{pmatrix}
-    \sinh{K}^N + \cosh{K}^n &  \sinh{K}^N - \cosh{K}^n\\
-    \sinh{K}^N - \cosh{K}^n &  \sinh{K}^N + \cosh{K}^n
     \end{pmatrix}
-    \]
-    On en conclue
-    \[
-    Z_\beta = \sinh{K}^N + \cosh{K}^N = \sinh{(J\beta)}^N + \cosh{(J\beta)}^N
-    \]
+    \in S_2\left(\mathbf{R}\right) \text{est orthogonalement diagonalisable:}\\
+    T &= \frac{1}{\sqrt{2}}
+    \begin{pmatrix}
+    1 & 1 \\
+    1 & -1
+    \end{pmatrix}
+    \begin{pmatrix}
+    2\cosh K & 0 \\
+    0 & 2\sinh K
+    \end{pmatrix}
+	\frac{1}{\sqrt{2}}
+	\begin{pmatrix}
+	1 & 1 \\
+	1 & -1
+	\end{pmatrix}\\
+	T^{N} &= 2^{N-1}
+	\begin{pmatrix}
+	1 & 1 \\
+	1 & -1
+	\end{pmatrix}
+	\begin{pmatrix}
+	\cosh^N K& 0 \\
+	0 & \sinh^N K
+	\end{pmatrix}
+	\begin{pmatrix}
+	1 & 1 \\
+	1 & -1
+	\end{pmatrix}\\
+        &= 2^{N-1}\begin{pmatrix}
+    \cosh^N{K} + \sinh^N{K} &  \cosh^N{K} - \sinh^N{K}\\
+    \cosh^N{K} - \sinh^N{K} &  \cosh^N{K} + \sinh^N{K}
+    \end{pmatrix}
+    \end{align*}
+    On en conclut
+    \begin{align*}
+    Z_\beta &= 2^{N-1}\left(\cosh^N{K} + \sinh^N{K}\right)\\
+    &= 2^{N-1}\left(\cosh^N{(J\beta)} + \sinh^N{(J\beta)}\right)
+    \end{align*}
 \end{frame}
 
 \begin{frame}
-On définit l'énergie libre
-\begin{align*}
-	f = - \frac{\ln Z_\beta}{N \beta}
-\end{align*}
+\begin{columns}[c]
+	\column{.3\textwidth}
+	On définit l'énergie libre
+	\begin{align*}
+		f = - \frac{\ln Z_\beta}{N \beta}
+	\end{align*}
+    \column{.7\textwidth}
+    \vspace*{-1.5cm}
 \begin{figure}
 	\centering
-	\includegraphics[height=0.5\textheight]{assets/Elibre}
-	\caption{\'Energie libre par n\oe{}ud en fonction de $\beta$}
+	\includegraphics[height=0.65\textheight]{assets/Elibre}
+	\caption{\'Energie libre par n\oe{}ud en fonction de $T$}
 	\label{fig:elibre}
 \end{figure}
+\end{columns}
 \end{frame}
 
 %
