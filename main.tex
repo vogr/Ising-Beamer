@@ -113,16 +113,16 @@
 
 \begin{frame}
     \begin{itemize}
-        \item un graphe \(G\) (\(\subseteq \mathbb{Z}^d\))
-        \item une configuration \(\sigma : V_G \to \left\{-1, +1\right\} \)
+        \item un graphe \(G = \left(S_G, A_G\right) \) fini, \(G \subseteq \mathbb{Z}^d \)
+        \item une configuration \(\sigma : S_G \to \left\{-1, +1\right\} \)
         \item fonction donnant l'énergie totale d'une configuration (Hamiltonien) :
         \[
-        \forall \sigma \in \left\{-1, +1\right\} \qquad H(\sigma) = - J \sum_\text{$i$, $j$ voisins} \sigma(i)\sigma(j)
-                 - J \sum_{i \in \bord(G)} \sigma(i)
+        \forall \sigma \in \left\{-1, +1\right\} \qquad H(\sigma) = - J \sum_{\mathclap{\text{$i$, $j$ voisins}}} \sigma(i)\sigma(j)
+                 - J \sum_{\mathclap{i \in \bord(G)}} \sigma(i)
         \]
         où \(J > 0\) est une constante correspondant à l'énergie d'interaction entre deux molécules et
         \[
-        \bord(G) = \left\{x \in V_G \mid \exists y \in \mathbb{Z}^d\setminus V_G, \text{$x$ et $y$ voisins} \right\}
+        \bord(G) = \left\{x \in S_G \mid \exists y \in \mathbb{Z}^d\setminus S_G, \text{$x$ et $y$ voisins} \right\}
         \]
     \end{itemize}
 \end{frame}
@@ -157,7 +157,7 @@
     \begin{definition}[Mesure de \bsc{Gibbs}]
     Dans l'ensemble canonique à la température inverse $\beta = \frac{1}{k_BT}$, la probabilité d'être dans la configuration \(\sigma\)  est donnée par
         \[\mu_\beta(\sigma) = \frac{e^ { - \beta H(\sigma)}}{Z_\beta} \]
-        où $Z$ est la fonction de partition définie par \[Z_\beta = \sum_{\sigma \in \left\{-1, +1\right\}^{V_G}} e^{-\beta H(\sigma)}\]
+        où $Z$ est la fonction de partition définie par \[Z_\beta = \sum_{\sigma \in \left\{-1, +1\right\}^{S_G}} e^{-\beta H(\sigma)}\]
     \end{definition}
 \end{frame}
 
@@ -179,8 +179,8 @@
 
 \begin{frame}
 \begin{definition}[Mesure de probabilité]
-    Soit $f : \left\{-1, +1\right\}^{V_G} \to \mathbb{R}$ une grandeur physique. La mesure de probabilité de $f$ à la température inverse $\beta$ est
-    \[ \left\langle f \right\rangle_\beta = \sum_{\sigma \in \left\{-1, +1\right\}^{V_G}} f(\sigma)\mu_\beta(\sigma)\]
+    Soit $f : \left\{-1, +1\right\}^{S_G} \to \mathbb{R}$ une grandeur physique. La mesure de probabilité de $f$ à la température inverse $\beta$ est
+    \[ \left\langle f \right\rangle_\beta = \sum_{\sigma \in \left\{-1, +1\right\}^{S_G}} f(\sigma)\mu_\beta(\sigma)\]
 \end{definition}
 La transition de phase est repérée par une discontinuité (ou forte variation) d'une mesure de probabilité.
 
@@ -349,7 +349,7 @@ On décompose $W(A \to B) = T(A \to B) \cdot A(A \to B)$ où $T$ est la probabil
 
 L'objectif est d'avoir $P_A = \mu(A)$. D'après (ii), cela nous donne 
 \begin{align*}
-\frac{T(B \to A)\cdot A(B \to A)}{T(A\to B)\cdot A(A \to B)} &= \frac{P_A}{P_B} = e^{-\beta{H(A) - H(B)}}
+\frac{T(B \to A)\cdot A(B \to A)}{T(A\to B)\cdot A(A \to B)} &= \frac{P_A}{P_B} = e^{-\beta\left(H(A) - H(B)\right)}
 \end{align*}
 \end{frame}
 
@@ -358,7 +358,7 @@ L'objectif est d'avoir $P_A = \mu(A)$. D'après (ii), cela nous donne
 %
 
 \begin{frame}
-	On considère les uniquement transitions par inversion d'un spin avec \[T(A \to B) = T(B \to A) = \frac{1}{\left|V_G\right|}\]
+	On considère les uniquement transitions par inversion d'un spin avec \[T(A \to B) = T(B \to A) = \frac{1}{\left|S_G\right|}\]
 	Algorithme \bsc{Metropolis-Hastings} :
 	\[
 	A(A \to B) = \min\left(1, \frac{P_B}{P_A}\right) = \min\left(1, e^{-\beta(H(B) - H(A))}\right)
@@ -388,7 +388,7 @@ L'objectif est d'avoir $P_A = \mu(A)$. D'après (ii), cela nous donne
 	\caption{$T = 3$}
 	\label{fig:t3}
 \end{subfigure}%
-\caption{Modélisation numérique : système après \nombre{1000} balayages}
+\caption{Modélisation numérique : système après \nombre{1000} balayages\\(1 balayage = $N^d$ propositions d'échange)}
 \end{figure}
 
 \end{frame}
