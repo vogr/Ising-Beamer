@@ -49,10 +49,14 @@
 
 \newcommand{\p}[1]{\mintinline{python3}{#1}}
 
+\newcommand\eqdef{\overset{\mathrm{def}}{=}}
+
 \DeclareMathOperator{\bsum}{\mathlarger{\sum}}
 \DeclareMathOperator{\bbsum}{\mathlarger{\mathlarger{\sum}}}
 
 \DeclareMathOperator{\bord}{bord}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Sp}{Sp}
 
 %%% Autotitle slides.
 \addtobeamertemplate{frametitle}{
@@ -197,8 +201,8 @@ La transition de phase est repérée par une discontinuité (ou forte variation)
 \begin{figure}
     \centering
     \begin{tikzpicture}
-\fill[blue!40!white] (-4,0) rectangle (-3,1);
-\fill[blue!40!white] (3,0) rectangle (4,1);
+%\fill[blue!40!white] (-4,0) rectangle (-3,1);
+%\fill[blue!40!white] (3,0) rectangle (4,1);
 \draw[step=1cm,color=gray] (-4,0) grid (4,1);
 \node at (-3.5,+0.5) {$+1$};
 \node at (-2.5,+0.5) {$-1$};
@@ -207,103 +211,83 @@ La transition de phase est repérée par une discontinuité (ou forte variation)
 \node at (0.5,+0.5) {$-1$};
 \node at (1.5,+0.5) {$+1$};
 \node at (2.5,+0.5) {$-1$};
-\node at (3.5,+0.5) {$+1$};
+\node at (3.5,+0.5) {$-1$};
     \end{tikzpicture}
-    \caption{Une configuration $\sigma$ avec condition de bords $+$, $N = 6$}
+    \caption{Une configuration $\sigma$ avec condition de bords périodique, $N = 6$}
 \end{figure}
-
-En une dimension, sur un graphe de longueur $N$, le Hamiltonien devient
+En une dimension, sur un graphe de longueur $N$ soumis à un champ $h$, le Hamiltonien avec condition aux bords  périodique (dans l'ensemble grand canonique) devient
 \begin{align*}
-&H(\sigma) = -J \sum_{i = 1}^{N - 1} \sigma(i) \sigma(i + 1) - J \sigma(1) -J\sigma(N) \\
- \forall \sigma \in &\left\{-1, +1\right\}^N,\\
-&e^{-\beta H(\sigma)} = (e^{K\sigma(1)})(e^{K\sigma(1)\sigma(2)}) (e^{K\sigma(2)\sigma(3)}) \dots (e^{K\sigma(N-1)\sigma(N)}) (e^{K\sigma(N)})
+H(\sigma) &= -J \sum_{i = 1}^{N} \sigma(i) \sigma(i + 1) -h \sum_{i = 1}^{N} \sigma(i) \\
+                         & = -J \sum_{i = 1}^{N} \sigma(i) \sigma(i + 1) -\frac{h}{2} \sum_{i = 1}^{N} \left[\sigma(i) + \sigma(i+1)\right]\\
 \end{align*}
-où $K = J \beta$.
 \end{frame}
 
 \begin{frame}
+\begin{align*}
+	e^{-\beta H(\sigma)} &= \prod_{i = 1}^{N} e^{\beta \left(J\sigma(i)\sigma(i+1) +\frac{h}{2}\left(\sigma(i) + \sigma(i+1)\right)\right) }
+\end{align*}
 On pose la matrice de transfert
    \[T =
    \begin{pmatrix}
-   T_{++} & T_{-+} \\
-   T_{+-}  &  T_{--}
+   T_{++} & T_{+-} \\
+   T_{-+}  &  T_{--}
    \end{pmatrix}
    =
    \begin{pmatrix}
-   e^{K}& e^{-K} \\
-   e^{-K} & e^{K}
+   e^{\beta(J + h)}  &   e^{\beta(- J)} \\
+   e^{\beta(-J)} & e^{\beta(J - h)}
    \end{pmatrix}
    \]
+   On a alors
    \begin{align*}
-   e^{-\beta H(\sigma)} =& T_{+\sigma(1)} T_{\sigma(1)\sigma(2)} \dots T_{\sigma(N-1)\sigma(N)} T_{\sigma(N)+}\\
+   e^{-\beta H(\sigma)} =& \prod_{i}^{N} T_{\sigma(i), \sigma(i+1)}
    \end{align*}
-   Or par définition du produit matriciel\[
-   \sum_{\sigma(2) \in \left\{-1, 1\right\}} T_{\sigma(1)\sigma(2)}T_{\sigma(2)\sigma(3)} = \left(T^2\right)_{\sigma(1)\sigma(3)}
-   \]
 \end{frame}
 
 \begin{frame}
-On a alors
+Calculons la fonction de partition :
 \begin{align*}
-Z_\beta &= \sum_{\sigma \in \left\{-1, +1\right\}^N} e^{-\beta H(\sigma)} \\
-&=\sum_{\substack{\left.\sigma\right|_{\left[1, N-1\right]} \\ \sigma(N) \in \left\{-1, +1\right\}}}  T_{+\sigma(1)} \dots T_{\sigma(N-2)\sigma(N-1)}T_{\sigma(N-1)\sigma(N)} T_{\sigma(N)+} \\
-&= \sum_{\left.\sigma\right|_{\left[1, N-1\right]}}  \left[ T_{+\sigma(1)} \dots T_{\sigma(N-2)\sigma(N-1)} \sum_{\mathclap{\sigma(N) \in \left\{-1, +1\right\}}} T_{\sigma(N-1)\sigma(N)} T_{\sigma(N)+} \right] \\
-&= \sum_{\left.\sigma\right|_{\left[1, N-1\right]}} T_{+\sigma1}\dots T_{\sigma(N-2)\sigma(N-1)} \left(T^2\right)_{\sigma(N-1)+}
-\end{align*}
-Par récurrence
-\begin{align*}
-    Z_\beta = (T^N)_ {++}
+Z_\beta &\eqdef \sum_{\sigma \in \left\{-1, +1\right\}^N} e^{-\beta H(\sigma)} \\
+&=\sum_{\sigma(0) = \pm 1} \dots \sum_{\sigma(N) = \pm 1} \prod_{i}^{N} T_{\sigma(i), \sigma(i+1)} \\
+&= \Tr\left(T^N\right)
 \end{align*}
 \end{frame}
 
 \begin{frame}
     
     \begin{align*}
-    T &=
-    \begin{pmatrix}
-    e^{K}& e^{-K} \\
-    e^{-K} & e^{K}
-    \end{pmatrix}
-    \in S_2\left(\mathbf{R}\right) \text{est orthogonalement diagonalisable:}\\
-    T &= \frac{1}{\sqrt{2}}
-    \begin{pmatrix}
-    1 & 1 \\
-    1 & -1
-    \end{pmatrix}
-    \begin{pmatrix}
-    2\cosh K & 0 \\
-    0 & 2\sinh K
-    \end{pmatrix}
-	\frac{1}{\sqrt{2}}
-	\begin{pmatrix}
-	1 & 1 \\
-	1 & -1
-	\end{pmatrix}\\
-	T^{N} &= 2^{N-1}
-	\begin{pmatrix}
-	1 & 1 \\
-	1 & -1
+    T =
+   \begin{pmatrix}
+	e^{\beta(J + h)}  &   e^{\beta(- J)} \\
+	e^{\beta(-J)} & e^{\beta(J - h)}
 	\end{pmatrix}
-	\begin{pmatrix}
-	\cosh^N K& 0 \\
-	0 & \sinh^N K
-	\end{pmatrix}
-	\begin{pmatrix}
-	1 & 1 \\
-	1 & -1
-	\end{pmatrix}\\
-        &= 2^{N-1}\begin{pmatrix}
-    \cosh^N{K} + \sinh^N{K} &  \cosh^N{K} - \sinh^N{K}\\
-    \cosh^N{K} - \sinh^N{K} &  \cosh^N{K} + \sinh^N{K}
-    \end{pmatrix}
+    \in S_2\left(\mathbf{R}\right)
     \end{align*}
-    On en conclut
+    est orthogonalement diagonalisable (Th. spectral), notons \(\Sp\left(T\right) = \left\{\lambda_+, \lambda_-\right\}\).
     \begin{align*}
-    Z_\beta &= 2^{N-1}\left(\cosh^N{K} + \sinh^N{K}\right)\\
-    &= 2^{N-1}\left(\cosh^N{(J\beta)} + \sinh^N{(J\beta)}\right)
+ 		\chi_T &= X^2 - \left(e^{\beta(J + h)} + e^{\beta(J - h)}\right) + e^{2\beta J} - e^{-2\beta J} \\
+ 		               & = X^2 - e^{\beta J}  2\cosh(\beta h) + 2\sinh(2\beta J)\\
+ 		\lambda_\pm &= \frac{2e^{\beta J}\cosh(\beta h) \pm \sqrt{4e^{2\beta J}\cosh^2(\beta h) + 8\sinh(2\beta J)}}{2} \\
+ 		                              &= e^{\beta J}\cosh(\beta h) \pm \sqrt{e^{2\beta J}\cosh^2(\beta h) + 2\sinh(2\beta J)}
     \end{align*}
+
 \end{frame}
 
+
+\begin{frame}
+\begin{align*}
+Z_\beta &= \Tr\left(T^N\right) = \lambda_+^N + \lambda_-^N\\
+f_N(\beta,h) &= \frac{1}{N} \log\left(Z_{\beta,N}\right) \\
+&=  \log\left(\lambda_+\right)  + \log\left(1 + \left(\frac{\lambda_-}{\lambda_+}\right)^N \right)
+\end{align*}
+Or, $0 \leq \lambda_- < \lambda_+$. On conclut
+\begin{align*}
+	f(\beta, h) &= \log\left(\lambda_+\right) \\
+							&= \log\left( e^{\beta J}\cosh(\beta h) \pm \sqrt{e^{2\beta J}\cosh^2(\beta h) + 2\sinh(2\beta J)} \right)
+\end{align*}
+\end{frame}
+
+\begin{comment}
 \begin{frame}
 \begin{columns}[c]
 	\column{.3\textwidth}
@@ -321,6 +305,7 @@ Par récurrence
 \end{figure}
 \end{columns}
 \end{frame}
+\end{comment}
 
 %
 \subsection{En dimension supérieure à deux}
