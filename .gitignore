@@ -26,3 +26,5 @@
 
 # Notebook Checkpoints
 .ipynb_checkpoints/
+
+.directory

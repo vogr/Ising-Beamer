@@ -16,6 +16,7 @@
 \usepackage[justification=centering]{caption}
 \usepackage{graphicx, grffile, subcaption} % Images in \adjustimage{k=v}{file} ; subfloat in env 'subfigure'
 \usepackage{float, placeins} % Floats stay before or after \FloatBarrier, prefer to [H]
+\usepackage[percent]{overpic}
 \usepackage{ltablex, booktabs, tabulary} %ltablex: 'tabularx' as longtables ; autoresize columns in tabulary
 %\usepackage[modulo]{lineno} % N° de ligne dans \begin{linenumbers}
 %\usepackage{lipsum} % Lorem ipsum dans \lipsum
@@ -28,6 +29,8 @@
 \usepackage{suffix}
 \usepackage{relsize}
 
+\usepackage{appendixnumberbeamer}
+
 \usepackage{fontspec, realscripts, metalogo}
 %\setmainfont[SmallCapsFont={Latin Modern Roman Caps},Ligatures=TeX]{Latin Modern Roman}
 \setmainfont{STIX Two Text}
@@ -36,7 +39,7 @@
 %\setmathfont{Latin Modern Math}
 %\setmathfont{STIX Two Math}
 
-\usetikzlibrary{matrix}
+\usetikzlibrary{matrix, shapes.geometric, arrows, arrows.meta}
 \usepackage[strict]{csquotes}
 \usepackage{microtype}
 \usepackage{trace}
@@ -73,7 +76,7 @@
 
 \begin{document}
 \frame{\titlepage}
-\frame{\tableofcontents}
+
 	
 %%%
 \section{Mise en situation}
@@ -83,18 +86,33 @@
 \begin{frame}
     \begin{figure}
         \centering
-        \includegraphics[height=0.65\textheight]{assets/miscibilite-bulle}
+       	\begin{subfigure}{0.32\textwidth}
+        	\centering
+        	\includegraphics[height=0.3\textheight]{assets/bulle/bulle-profil.jpg}
+        	\caption{\`A basse température\\(vue de côté))}
+        \end{subfigure}
+		\begin{subfigure}{0.32\textwidth}
+			\centering
+			\includegraphics[height=0.3\textheight]{assets/bulle/bulle-coloree.jpg}
+			\caption{\`A basse température\\(vue de dessus)}
+		\end{subfigure}
+		\begin{subfigure}{0.32\textwidth}
+			\centering
+			\includegraphics[height=0.3\textheight]{assets/bulle/IMG_20180612_220259.jpg}
+			\caption{\`A haute température\\\phantom{}}
+		\end{subfigure}
         \caption{Bulle d'huile dans un mélange eau-alcool}
         \label{fig:miscibilite-bulle}
     \end{figure}
 \end{frame}
 
+\frame{\tableofcontents}
 
 \begin{frame}
 \begin{figure}
 	\centering
 	\includegraphics[width=0.4\textwidth]{assets/config44.pdf}
-	\caption{Modélisation du mélange par une configuration de molécules sur un réseau}
+	\caption{Modélisation du mélange par une configuration de molécules sur un réseau (dessinée avec un programme en langage Julia)}
 \end{figure}
 \end{frame}
 
@@ -176,7 +194,7 @@
     \`A la température inverse $\beta = \frac{1}{k_BT}$, la probabilité d'observer le système dans la configuration \(\omega\)  est donnée par
         \[\mu_{\Lambda;\beta}(\omega) \eqdef \frac{e^ { - \beta H_\Lambda(\omega)}}{Z_{\Lambda;\beta}} \]
         où $Z_{\Lambda;\beta}$ est la fonction de partition définie par
-        \[Z_{\Lambda;\beta} \eqdef  \sum_{\omega \in \Omega_\Lambda} e^{-\beta H(\omega)}\]
+        \[Z_{\Lambda;\beta} \eqdef  \sum_{\omega \in \Omega_\Lambda} e^{-\beta H_\Lambda(\omega)}\]
     \end{definition}
 \end{frame}
 
@@ -206,7 +224,7 @@
 
 
 \begin{frame}
-\begin{definition}[\'Espérance]
+\begin{definition}[Espérance]
     Soit $f : \Omega_\Lambda \to \mathbf{R}$. L'espérance de $f$ sous $\mu_{\Lambda;\beta}$ est
     \[ \left\langle f \right\rangle_{\Lambda;\beta} \eqdef \sum_{\omega \in \Omega_\Lambda} f(\omega)\mu_{\Lambda;\beta}(\omega)\]
 \end{definition}
@@ -236,20 +254,20 @@
 %
 \begin{frame}
 	\begin{columns}
-		\begin{column}{0.4\textwidth}
+		\begin{column}{0.45\textwidth}
 			\begin{figure}
 				\includegraphics[width=0.9\textwidth]{assets/LTE-small.pdf}
-				\caption{Détermination des contours}
+				\caption{Détermination des contours\\ (en $O(\left|\Lambda\right|)$, programme Julia)}
 			\end{figure}
 		\end{column}
-		\begin{column}{0.6\textwidth}
+		\begin{column}{0.55\textwidth}
 			\begin{figure}
 				\includegraphics[width=0.6\textwidth]{assets/deformation.pdf}
 				\caption{Règle de déformation}
 			\end{figure}
 			\begin{align*}
 				H_\Lambda(\omega) &= -J \left| \mathcal{E}_\Lambda \right| +  2J \sum_{\mathclap{\gamma \in \Gamma(\omega)}} \left| \gamma \right| \\
-				\mu_\Lambda\left[\sigma_0 = -1\right] &\leq \mu_\Lambda \left[\exists \tilde{\gamma} \in \Gamma : 0 \in \Int\left(\tilde{\gamma}\right)\right]
+				\left[\sigma_0 = -1\right] &\subseteq  \left[\exists \tilde{\gamma} \in \Gamma : 0 \in \Int\left(\tilde{\gamma}\right)\right]
 			\end{align*}
 		\end{column}
 	\end{columns}
@@ -258,77 +276,39 @@
 
 %%%
 \section{Approche algorithmique}
-\subsection{Généralités}
+\subsection{Algorithme Kawasaki}
 %%%
 
 \begin{frame}
-  \begin{itemize}
-  	\item \'Echantillonage d'importance
-  	\item Dynamique = choix des $R(\omega \to \tilde{\omega})$
-  	\item \'Equation maîtresse
-  	\begin{align*}
-  		\frac{dP_\omega}{dt} = \sum_{\tilde{\omega}} \left[ P_\omega(t)R(\omega \to \tilde{\omega}) - P_{\tilde{\omega}} (t) R(\tilde{\omega} \to \omega)\right]
-  	\end{align*}
-  	\item Connaissance à priori de $P_\omega$ à l'équilibre :
- 	  	\begin{align*}
- 	  		P_\omega \xrightarrow[t \to +\infty]{} \mu_{\Lambda;\beta}(\omega)
-	  	\end{align*}
-  \end{itemize}
-\end{frame}
+\begin{figure}
+		\begin{tikzpicture}[node distance=1.5cm]
+	\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=0.8cm, draw=black, text centered, fill=red!30]
+	\tikzstyle{operation} = [rectangle, minimum width=3cm, minimum height=0.8cm, draw=black, text centered, fill=blue!30]
+	\tikzstyle{decision} = [rectangle, rounded corners, minimum width=3cm, minimum height=0.8cm, draw=black, text centered, fill=green!30]
+	\tikzstyle{arrow} = [thick,->,>=Stealth]
+	
+	\node (start) [startstop] {Configuration $\omega(t)$};
+	\node (proposition) [operation, below of=start] {$i,j$ voisins pris uniformement};
+	\draw [arrow] (start) -- (proposition);
+	
+	\node (accept) [decision, below of=proposition] {$\delta H \leq 0 ?$};
+	\draw [arrow] (proposition) -- (accept);
+	
+	\node(accepted)[operation, left of =accept,xshift=-3cm] {Transition acceptée};
+	\node(rand)[decision, below of=accept] {\texttt{rand()} < $e^{-\beta \Delta H}$ ?};
+	\draw [arrow] (accept) -- node [anchor=south] {Oui} (accepted);
+	\draw [arrow] (accept) --  node [anchor=west] {Non} (rand);
+	
+	\node(refused)[operation, right of =rand,xshift=3cm] {Transition refusée};
+	\draw [arrow] (rand) -| node [anchor=east] {Oui} (accepted);
+	\draw [arrow] (rand) --  node [anchor=south] {Non} (refused);
+	
+	\draw [arrow] (refused) |- node [anchor=south] {$\omega(t+1) = \omega(t)$} (start);
+	\draw [arrow] (accepted) |-  node [anchor=south] {$\omega(t+1) = e_{i,j}(\omega(t))$} (start);
+	\end{tikzpicture}
+	\caption{Algorithme Kawasaki}
+\end{figure}
 
-\begin{frame}
-\begin{enumerate}[(i)]
-	\item Ergodicité : à partir d'une configuration de mesure de Gibbs non nulle, toutes les autres configurations sont atteignables
-	\item \'Equilibre détaillé : $P_AW(A \to B) = P_BW(B \to A)$ où $P_A$ est la probabilité d'être dans la configuration $A$ et $W(A \to B)$ est la probabilité de passer de la configuration $A$ à la configuration $B$.
-\end{enumerate}
-On décompose $W(A \to B) = T(A \to B) \cdot A(A \to B)$ où $T$ est la probabilité que la transition soit proposée et $A$ celle qu'elle soit acceptée.
-
-L'objectif est d'avoir $P_A = \mu(A)$. D'après (ii), cela nous donne 
-\begin{align*}
-\frac{T(B \to A)\cdot A(B \to A)}{T(A\to B)\cdot A(A \to B)} &= \frac{P_A}{P_B} = e^{-\beta\left(H(A) - H(B)\right)}
-\end{align*}
-\end{frame}
-
-%
-\subsection{L'algorithme Kawasaki}
-%
-
-\begin{frame}
-	\begin{figure}[htb!]
-		\centering
-		\begin{subfigure}{0.3\textwidth}
-			\centering
-			$\begin{matrix}
-			\dots & a & d &  \dots \\
-			b & s & -s & e\\
-			\dots& c & f & \dots
-			\end{matrix}$
-			\caption{Configuration 1}
-		\end{subfigure}
-		{\Large $\rightarrow$}
-		\begin{subfigure}{0.3\textwidth}
-			\centering
-			$\begin{matrix}
-			\dots & a & d &  \dots \\
-			b & -s & s & e\\
-			\dots& c & f & \dots
-			\end{matrix}$
-			\caption{Configuration 2}
-		\end{subfigure}
-		\caption{Proposition d'échange de spins voisins (en $k$ et $k'$) pour l'algorithme Kawasaki}
-	\end{figure}
-\begin{align*}
-	\Delta H &= -2Js \cdot \left( \sum_{\substack{i \sim k \\ i \neq k'}} \omega_1(i) - \sum_{\substack{i' \sim k' \\ i' \neq k}} \omega_1(i') \right)
-\end{align*}
-	La transition est acceptée avec une probabilité
-	\begin{math}
-	\left\{
-	\begin{array}{r l}
-	0 & \text{si } \Delta{H} \leq 0 \\
-	e^{-\beta \Delta{H}} & \text{sinon}
-	\end{array}
-	\right.
-	\end{math}
 \end{frame}
 
 %
@@ -337,31 +317,31 @@ L'objectif est d'avoir $P_A = \mu(A)$. D'après (ii), cela nous donne
 
 \begin{frame}
 	\begin{figure}
-		\begin{subfigure}{0.3\textwidth}
-			\includegraphics[width=\textwidth]{assets/T0.1-120.pdf}
-			\caption{$T= 0.1$}
-		\end{subfigure}
-		\begin{subfigure}{0.3\textwidth}
-			\includegraphics[width=\textwidth]{assets/T2.3-120.pdf}
-			\caption{$T= 2.3$}
-		\end{subfigure}
-		\begin{subfigure}{0.3\textwidth}
-			\includegraphics[width=\textwidth]{assets/T6.0-120.pdf}
-			\caption{$T= 6.0$}
-		\end{subfigure}
-\caption{Modélisation numérique : système après \nombre{600000} balayages\\(1 balayage = $N^2$ propositions d'échange ; $N =120$)}
+			\foreach \i in {0.1, 0.22, 0.46, 0.64, 0.87, 1.05, 1.11, 1.17, 1.29, 1.47, 1.59, 1.77, 1.89, 2.07, 2.25}{
+			\includegraphics[width=0.13\textwidth]{assets/Kawasaki/\i.png}}
+		\begin{overpic}[width=0.13\textwidth]{assets/Kawasaki/2.31.png}
+		\put (3,3) {\begin{tikzpicture}
+			\tikzstyle{operation} = [rectangle,rounded corners, minimum width=0.2cm, minimum height=0.2cm, draw=black, text centered, fill=blue!50,opacity=0.5,text opacity=1]
+			\node (proposition) [operation] {\smaller $T_c$};
+			\end{tikzpicture}}
+		\end{overpic}
+		\foreach \i in {2.36, 2.54,2.84,3.08,3.32,3.62,3.97,4.33,4.81,5.28,5.64,6.0}{
+		\includegraphics[width=0.13\textwidth]{assets/Kawasaki/\i.png}
+	}
+\caption{24 configurations probables pour des valeurs croissantes de $T$ entre 0.1 et 6}
 	\end{figure}
 
 \end{frame}
 
 \begin{frame}
 \begin{figure}
-	\includegraphics[width=0.8\textwidth]{assets/mesures120.pdf}
-	\caption{Modélisation numérique : système après \nombre{600000} balayages\\(1 balayage = $N^2$ propositions d'échange ; $N =120$)}
+	\includegraphics[width=0.7\textwidth]{assets/mesures120.pdf}
+	\caption{Modélisation numérique : système après \nombre{600000} balayages\\(1 balayage = $N^2$ propositions d'échange, $N =120$, pour 100 températures)\\ Temps de calcul : 3 jours}
 \end{figure}
 
 \end{frame}
 
+\appendix
 \section{Annexe}
 \subsection*{Annexe}
 \bgroup
