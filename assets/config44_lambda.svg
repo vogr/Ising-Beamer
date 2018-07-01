@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800"
+   height="320"
+   viewBox="0 0 211.66666 84.666672"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="config44_lambda.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="62.311869"
+     inkscape:cy="143.2842"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g252"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1600"
+     inkscape:window-height="836"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-212.33332)">
+    <g
+       id="g252"
+       transform="translate(0,10.583337)">
+      <g
+         id="g18"
+         inkscape:label="config44"
+         transform="matrix(0.35277777,0,0,0.35277777,275.16667,393.76189)">
+        <g
+           transform="translate(-600.00001,-544.28573)"
+           id="g20">
+          <path
+             d="M 0,0 H 40 V 40 H 0 Z"
+             style="fill:#da70d6;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path22"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(15.242188,23.761719)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text26">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan24">+</tspan>
+          </text>
+          <path
+             d="M 0,40 H 40 V 80 H 0 Z"
+             style="fill:#da70d6;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path28"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(15.242188,63.761719)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text32">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan30">+</tspan>
+          </text>
+          <path
+             d="m 0,80 h 40 v 40 H 0 Z"
+             style="fill:#da70d6;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path34"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(15.242188,103.76172)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text38">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan36">+</tspan>
+          </text>
+          <path
+             d="m 0,120 h 40 v 40 H 0 Z"
+             style="fill:#da70d6;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path40"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(15.242188,143.76172)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text44">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan42">+</tspan>
+          </text>
+          <path
+             d="m 0,160 h 40 v 40 H 0 Z"
+             style="fill:#da70d6;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path46"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(15.242188,183.76172)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text50">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan48">+</tspan>
+          </text>
+          <path
+             d="m 0,200 h 40 v 40 H 0 Z"
+             style="fill:#da70d6;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path52"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(15.242188,223.76172)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text56">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan54">+</tspan>
+          </text>
+          <path
+             d="M 40,0 H 80 V 40 H 40 Z"
+             style="fill:#da70d6;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path58"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(55.242188,23.761719)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text62">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan60">+</tspan>
+          </text>
+          <path
+             d="M 40,40 H 80 V 80 H 40 Z"
+             style="fill:#9932cc;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path64"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(55.242188,63.761719)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text68">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan66">+</tspan>
+          </text>
+          <path
+             d="m 40,80 h 40 v 40 H 40 Z"
+             style="fill:#00008b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path70"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(55.242188,103.12891)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text74">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan72">−</tspan>
+          </text>
+          <path
+             d="m 40,120 h 40 v 40 H 40 Z"
+             style="fill:#00008b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path76"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(55.242188,143.12891)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text80">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan78">−</tspan>
+          </text>
+          <path
+             d="m 40,160 h 40 v 40 H 40 Z"
+             style="fill:#00008b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path82"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(55.242188,183.12891)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text86">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan84">−</tspan>
+          </text>
+          <path
+             d="m 40,200 h 40 v 40 H 40 Z"
+             style="fill:#da70d6;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path88"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(55.242188,223.76172)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text92">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan90">+</tspan>
+          </text>
+          <path
+             d="m 80,0 h 40 V 40 H 80 Z"
+             style="fill:#da70d6;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path94"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(95.242188,23.761719)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text98">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan96">+</tspan>
+          </text>
+          <path
+             d="m 80,40 h 40 V 80 H 80 Z"
+             style="fill:#00008b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path100"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(95.242188,63.128906)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text104">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan102">−</tspan>
+          </text>
+          <path
+             d="m 80,80 h 40 v 40 H 80 Z"
+             style="fill:#9932cc;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path106"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(95.242188,103.76172)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text110">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan108">+</tspan>
+          </text>
+          <path
+             d="m 80,120 h 40 v 40 H 80 Z"
+             style="fill:#00008b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path112"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(95.242188,143.12891)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text116">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan114">−</tspan>
+          </text>
+          <path
+             d="m 80,160 h 40 v 40 H 80 Z"
+             style="fill:#00008b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path118"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(95.242188,183.12891)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text122">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan120">−</tspan>
+          </text>
+          <path
+             d="m 80,200 h 40 v 40 H 80 Z"
+             style="fill:#da70d6;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path124"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(95.242188,223.76172)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text128">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan126">+</tspan>
+          </text>
+          <path
+             d="m 120,0 h 40 v 40 h -40 z"
+             style="fill:#da70d6;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path130"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(135.24219,23.761719)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text134">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan132">+</tspan>
+          </text>
+          <path
+             d="m 120,40 h 40 v 40 h -40 z"
+             style="fill:#00008b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path136"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(135.24219,63.128906)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text140">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan138">−</tspan>
+          </text>
+          <path
+             d="m 120,80 h 40 v 40 h -40 z"
+             style="fill:#9932cc;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path142"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(135.24219,103.76172)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text146">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan144">+</tspan>
+          </text>
+          <path
+             d="m 120,120 h 40 v 40 h -40 z"
+             style="fill:#9932cc;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path148"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(135.24219,143.76172)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text152">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan150">+</tspan>
+          </text>
+          <path
+             d="m 120,160 h 40 v 40 h -40 z"
+             style="fill:#9932cc;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path154"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(135.24219,183.76172)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text158">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan156">+</tspan>
+          </text>
+          <path
+             d="m 120,200 h 40 v 40 h -40 z"
+             style="fill:#da70d6;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path160"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(135.24219,223.76172)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text164">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan162">+</tspan>
+          </text>
+          <path
+             d="m 160,0 h 40 v 40 h -40 z"
+             style="fill:#da70d6;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path166"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(175.24219,23.761719)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text170">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan168">+</tspan>
+          </text>
+          <path
+             d="m 160,40 h 40 v 40 h -40 z"
+             style="fill:#9932cc;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path172"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(175.24219,63.761719)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text176">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan174">+</tspan>
+          </text>
+          <path
+             d="m 160,80 h 40 v 40 h -40 z"
+             style="fill:#00008b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path178"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(175.24219,103.12891)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text182">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan180">−</tspan>
+          </text>
+          <path
+             d="m 160,120 h 40 v 40 h -40 z"
+             style="fill:#00008b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path184"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(175.24219,143.12891)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text188">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan186">−</tspan>
+          </text>
+          <path
+             d="m 160,160 h 40 v 40 h -40 z"
+             style="fill:#9932cc;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path190"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(175.24219,183.76172)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text194">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan192">+</tspan>
+          </text>
+          <path
+             d="m 160,200 h 40 v 40 h -40 z"
+             style="fill:#da70d6;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path196"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(175.24219,223.76172)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text200">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan198">+</tspan>
+          </text>
+          <path
+             d="m 200,0 h 40 v 40 h -40 z"
+             style="fill:#da70d6;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path202"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(215.24219,23.761719)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text206">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan204">+</tspan>
+          </text>
+          <path
+             d="m 200,40 h 40 v 40 h -40 z"
+             style="fill:#da70d6;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path208"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(215.24219,63.761719)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text212">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan210">+</tspan>
+          </text>
+          <path
+             d="m 200,80 h 40 v 40 h -40 z"
+             style="fill:#da70d6;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path214"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(215.24219,103.76172)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text218">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan216">+</tspan>
+          </text>
+          <path
+             d="m 200,120 h 40 v 40 h -40 z"
+             style="fill:#da70d6;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path220"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(215.24219,143.76172)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text224">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan222">+</tspan>
+          </text>
+          <path
+             d="m 200,160 h 40 v 40 h -40 z"
+             style="fill:#da70d6;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path226"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(215.24219,183.76172)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text230">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan228">+</tspan>
+          </text>
+          <path
+             d="m 200,200 h 40 v 40 h -40 z"
+             style="fill:#da70d6;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path232"
+             inkscape:connector-curvature="0" />
+          <text
+             transform="translate(215.24219,223.76172)"
+             style="font-variant:normal;font-weight:normal;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text236">
+            <tspan
+               x="0"
+               y="0"
+               id="tspan234">+</tspan>
+          </text>
+        </g>
+      </g>
+      <path
+         d="M 77.611115,229.97221 H 51.850287 m 30.03714,-14.11111 h 47.891813 c 2.36908,0 4.27632,1.54963 4.27632,3.4745 v 49.49544 c 0,1.92487 -1.90724,3.4745 -4.27632,3.4745 H 81.887427 c -2.369077,0 -4.276312,-1.54963 -4.276312,-3.4745 V 219.3356 c 0,-1.92487 1.907235,-3.4745 4.276312,-3.4745 z"
+         style="fill:none;stroke:#ffcc00;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="path4053"
+         inkscape:connector-curvature="0" />
+      <text
+         inkscape:transform-center-y="-1.6036173"
+         inkscape:transform-center-x="-5.87993"
+         id="text4060"
+         y="233.10643"
+         x="44.541348"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'Alegreya Sans';-inkscape-font-specification:'Alegreya Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Alegreya;-inkscape-font-specification:Alegreya;stroke-width:0.26458332"
+           y="233.10643"
+           x="44.541348"
+           id="tspan4058"
+           sodipodi:role="line">$\Lambda$</tspan></text>
+    </g>
+  </g>
+</svg>

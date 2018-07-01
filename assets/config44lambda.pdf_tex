@@ -1,0 +1,131 @@
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'config44lambda.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{600bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.4)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{config44lambda.pdf}}%
+    \put(0.32540367,0.36039713){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{config44lambda.pdf}}%
+    \put(0.32540367,0.29373047){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{config44lambda.pdf}}%
+    \put(0.32540367,0.2270638){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{config44lambda.pdf}}%
+    \put(0.32540367,0.16039713){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{config44lambda.pdf}}%
+    \put(0.32540367,0.09373047){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{config44lambda.pdf}}%
+    \put(0.32540367,0.0270638){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{config44lambda.pdf}}%
+    \put(0.39207033,0.36039713){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{config44lambda.pdf}}%
+    \put(0.39207033,0.29373047){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{config44lambda.pdf}}%
+    \put(0.39207033,0.22811848){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}−\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{config44lambda.pdf}}%
+    \put(0.39207033,0.16145182){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}−\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{config44lambda.pdf}}%
+    \put(0.39207033,0.09478515){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}−\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{config44lambda.pdf}}%
+    \put(0.39207033,0.0270638){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{config44lambda.pdf}}%
+    \put(0.458737,0.36039713){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{config44lambda.pdf}}%
+    \put(0.458737,0.29478515){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}−\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{config44lambda.pdf}}%
+    \put(0.458737,0.2270638){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{config44lambda.pdf}}%
+    \put(0.458737,0.16145182){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}−\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{config44lambda.pdf}}%
+    \put(0.458737,0.09478515){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}−\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{config44lambda.pdf}}%
+    \put(0.458737,0.0270638){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{config44lambda.pdf}}%
+    \put(0.52540367,0.36039713){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{config44lambda.pdf}}%
+    \put(0.52540367,0.29478515){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}−\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{config44lambda.pdf}}%
+    \put(0.52540367,0.2270638){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{config44lambda.pdf}}%
+    \put(0.52540367,0.16039713){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{config44lambda.pdf}}%
+    \put(0.52540367,0.09373047){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{config44lambda.pdf}}%
+    \put(0.52540367,0.0270638){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{config44lambda.pdf}}%
+    \put(0.59207033,0.36039713){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{config44lambda.pdf}}%
+    \put(0.59207033,0.29373047){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{config44lambda.pdf}}%
+    \put(0.59207033,0.22811848){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}−\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{config44lambda.pdf}}%
+    \put(0.59207033,0.16145182){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}−\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{config44lambda.pdf}}%
+    \put(0.59207033,0.09373047){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{config44lambda.pdf}}%
+    \put(0.59207033,0.0270638){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{config44lambda.pdf}}%
+    \put(0.658737,0.36039713){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{config44lambda.pdf}}%
+    \put(0.658737,0.29373047){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{config44lambda.pdf}}%
+    \put(0.658737,0.2270638){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{config44lambda.pdf}}%
+    \put(0.658737,0.16039713){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{config44lambda.pdf}}%
+    \put(0.658737,0.09373047){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{config44lambda.pdf}}%
+    \put(0.658737,0.0270638){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{config44lambda.pdf}}%
+    \put(0.21043156,0.25185931){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Lambda$\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
