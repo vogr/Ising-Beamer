@@ -1,4 +1,4 @@
-\RequirePackage[l2tabu, orthodox]{nag}
+%\RequirePackage[l2tabu, orthodox]{nag}
 \documentclass[french]{beamer}
 \usetheme{Madrid}
 %\usetheme{metropolis}
@@ -33,7 +33,7 @@
 
 \usepackage{fontspec, realscripts, metalogo}
 %\setmainfont[SmallCapsFont={Latin Modern Roman Caps},Ligatures=TeX]{Latin Modern Roman}
-\setmainfont{STIX Two Text}
+\setmainfont{Charter}
 \setsansfont{Alegreya Sans}
 %\usepackage[math-style=french]{unicode-math}
 %\setmathfont{Latin Modern Math}
@@ -111,7 +111,7 @@
 \begin{frame}
 \begin{figure}
 	\centering
-	\includegraphics[width=0.4\textwidth]{assets/config44.pdf}
+	\includegraphics[width=0.4\textwidth]{assets-build/config44.pdf}
 	\caption{Modélisation du mélange par une configuration de molécules sur un réseau (dessinée avec un programme en langage Julia)}
 \end{figure}
 \end{frame}
@@ -120,7 +120,7 @@
 \begin{figure}
 	\centering
 	\def\svgwidth{1\textwidth}
-	\subimport{assets/}{config44lambda.pdf_tex}
+	\subimport{assets-build/}{config44_lambda.pdf_tex}
 	\caption{Modélisation du mélange par une configuration de molécules sur un réseau (dessinée avec un programme en langage Julia)}
 \end{figure}
 \end{frame}
@@ -157,7 +157,7 @@
 \begin{frame}
 \begin{figure}
 	\centering
-	\includegraphics[width=0.4\textwidth]{assets/config44.pdf}
+	\includegraphics[width=0.4\textwidth]{assets-build/config44.pdf}
 	\caption{Quelle énergie ?}
 \end{figure}
 \end{frame}
@@ -182,7 +182,7 @@
 	\begin{column}{0.4\textwidth}
 		\begin{figure}
 			\centering
-			\includegraphics[width=0.4\linewidth]{assets/config22}
+			%\includegraphics[width=0.4\linewidth]{assets/config22}
 			\caption{Configuration $2\times2$}
 			\label{fig:config22}
 		\end{figure}
@@ -215,15 +215,15 @@
 
 \begin{figure}
 	\begin{subfigure}{0.3\textwidth}
-		\includegraphics[width=\textwidth]{assets/T0.1-120.pdf}
+		\includegraphics[width=\textwidth]{assets-build/T0.1-120.pdf}
 		\caption{$T= 0.1$}
 	\end{subfigure}
 	\begin{subfigure}{0.3\textwidth}
-		\includegraphics[width=\textwidth]{assets/T2.3-120.pdf}
+		\includegraphics[width=\textwidth]{assets-build/T2.3-120.pdf}
 		\caption{$T= 2.3$}
 	\end{subfigure}
 	\begin{subfigure}{0.3\textwidth}
-		\includegraphics[width=\textwidth]{assets/T6.0-120.pdf}
+		\includegraphics[width=\textwidth]{assets-build/T6.0-120.pdf}
 		\caption{$T= 6.0$}
 	\end{subfigure}
 	\caption{Configuration probable à $T$ donné -- Phénomène de rupture d'homogénéité}
@@ -251,7 +251,7 @@
 
 \begin{frame}
 		\begin{figure}
-			\includegraphics[width=0.7\textwidth]{assets/naif5.pdf}
+			\includegraphics[width=0.7\textwidth]{assets-build/naif5.pdf}
 			\caption{Résolution exacte pour $N=5$ (conditions de bords périodiques) et formule explicite de Lars \bsc{Onsager} pour $N= +\infty$\\$2^{25} \approx 10^7$ configurations, \nombre{3,5} jours de temps de calcul.}
 		\end{figure}
 	
@@ -344,7 +344,7 @@
 
 \begin{frame}
 \begin{figure}
-	\includegraphics[width=0.7\textwidth]{assets/mesures120.pdf}
+	\includegraphics[width=0.7\textwidth]{assets-build/mesures120.pdf}
 	\caption{Modélisation numérique : système après \nombre{600000} balayages\\(1 balayage = $N^2$ propositions d'échange, $N =120$, pour 100 températures)\\ Temps de calcul : 3 jours}
 \end{figure}
 

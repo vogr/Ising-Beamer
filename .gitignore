@@ -4,6 +4,9 @@
 *.toc
 *.fls
 
+assets-build/
+build.ninja
+
 # PDF output - usually a bad idea to keep this in Git
 main.pdf
 
