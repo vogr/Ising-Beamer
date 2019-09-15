@@ -9,9 +9,6 @@ build.ninja
 .ninja_deps
 .ninja_log
 
-# PDF output - usually a bad idea to keep this in Git
-main.pdf
-
 # Latexmk
 *.fdb_latexmk
 *.xdv
